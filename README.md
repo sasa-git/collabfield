@@ -1,24 +1,32 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## DBの作成
+PostgreSQLを使っています。Gemfileの以下の所の設定を確認してください
 
-Things you may want to cover:
+```
+development:
+  adapter: postgresql
+  host: localhost
+  encoding: utf8
+  database: psgr_db
+  username: postgres #任意
+  password: postgres #任意
+```
 
-* Ruby version
+`$ sudo yum install postgresql-devel`
 
-* System dependencies
+`$ sudo yum install postgresql-server`
 
-* Configuration
+`$ sudo passwd postgres` #パスワード設定
 
-* Database creation
+`$ su postgres` #postgresユーザーに切り替え
 
-* Database initialization
+`$ initdb -D /var/lib/pgsql/data` DBの初期化
 
-* How to run the test suite
+`$ pg_ctl -D /var/lib/pgsql/data start`
 
-* Services (job queues, cache servers, search engines, etc.)
+`$ rails db:create RAILS_ENV=development` DBの作成
 
-* Deployment instructions
+`$ su postgres`
 
-* ...
+`$ psql -l`でdatabase: psgr_dbで登録したDBが作成されているか確認できる
