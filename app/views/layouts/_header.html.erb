@@ -1,0 +1,47 @@
+<header class="sticky-top">
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container-fluid">
+      <%= link_to "Brand", root_path, id: "logo", class: "navbar-brand" %>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav  mr-0">
+          <li class="nav-item"><%= link_to "Link", '#', class: "nav-link" %></li>
+          <li class="nav-item"><%= link_to "Link", '#', class: "nav-link" %></li>
+          
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="navbar-Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Account
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <%= link_to "Profile", '#', class: "dropdown-item" %>
+              <%= link_to "Settings", '#', class: "dropdown-item" %>
+              <div class="dropdown-divider"></div>
+              <%= link_to "Log out", '#', class: "dropdown-item" %>
+            </div>
+          </li>
+        </ul>
+        <%= form_tag '#', method: :get, class: "form-inline mr-auto" do %>
+          <%= search_field_tag "q", params[:q], class: "form-control mr-sm-2 my-2 my-sm-0", placeholder: "イベントを探す" %>
+          <%= button_tag "search!", class:"btn btn-outline-info my-2 my-sm-0" %>
+        <% end %>
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><%= link_to "Link", '#', class: "nav-link" %></li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="navbar-Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Account
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <%= link_to "Profile", '#', class: "dropdown-item" %>
+              <%= link_to "Settings", '#', class: "dropdown-item" %>
+              <div class="dropdown-divider"></div>
+              <%= link_to "Log out", '#', class: "dropdown-item" %>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
