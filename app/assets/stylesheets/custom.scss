@@ -1,3 +1,5 @@
+$backgroundColor: #f0f0f0;
+
 // signup form
 #sign-up-form{
   margin-top: 100px;
@@ -7,4 +9,41 @@
   }
   text-align: center;
   padding-bottom: 20px;
+}
+
+// default style
+
+*{
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  background: $backgroundColor;
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+h1{
+  font-size: 24px;
+  font-size: 2.4rem;
+}
+
+i{
+  width: 26px;
+}
+
+ul{
+  list-style: nonel
+}
+
+a:hover, a:active, a:link, a:visited{
+  text-decoration: none;
+}
+
+.control-label{
+  display: none;
 }
