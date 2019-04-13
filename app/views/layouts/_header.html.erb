@@ -1,5 +1,5 @@
 <header class="sticky-top">
-  <nav class="navbar navbar-expand-md navbar-light bg-light">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <div class="container-fluid">
       <%= link_to "Brand", root_path, id: "logo", class: "navbar-brand" %>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
@@ -23,7 +23,7 @@
           </li>
         </ul>
         <%= form_tag '#', method: :get, class: "form-inline mr-auto" do %>
-          <%= search_field_tag "q", params[:q], class: "form-control mr-sm-2 my-2 my-sm-0", placeholder: "イベントを探す" %>
+          <%= search_field_tag "q", params[:q], class: "form-control mr-sm-2 my-2 my-sm-0", placeholder: "Placeholder" %>
           <%= button_tag "search!", class:"btn btn-outline-info my-2 my-sm-0" %>
         <% end %>
 
