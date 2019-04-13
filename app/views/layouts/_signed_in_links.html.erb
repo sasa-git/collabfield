@@ -1,0 +1,10 @@
+<li class="nav-item"><%= link_to "Link", '#', class: "nav-link" %></li>
+<li class="nav-item dropdown">
+  <a href="#" class="nav-link dropdown-toggle" id="navbar-Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Account
+  </a>
+  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+    <%= link_to "Settings", edit_user_registration_path, class: "dropdown-item" %>
+    <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+  </div>
+</li>
