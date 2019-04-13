@@ -36,6 +36,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails', '4.3.3'
 gem 'devise'
 gem 'bootstrap_form'
+gem 'faker'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
