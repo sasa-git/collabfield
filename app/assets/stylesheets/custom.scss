@@ -1,5 +1,5 @@
 $backgroundColor: #f0f0f0;
-$navbarColor: #b6e2ff;
+$navbarColor: #3cb1ff;
 
 // signup form
 #sign-up-form{
@@ -151,5 +151,44 @@ a:hover, a:active, a:link, a:visited{
 @media (max-width: 575px){
   .single-post-card{
     padding: 20px;
+  }
+}
+
+// modal
+.modal-content {
+  h3 {
+    text-align: center;
+  }
+  p {
+    margin: 50px 0;
+  }
+  .posted-by {
+    color: rgba(0,0,0,0.5);
+  }
+}
+
+.modal-content {
+  .loaded-data {
+    h3, p {
+      overflow: hidden;
+    }
+    padding: 0 10px;
+    .posted-by {
+      margin: 0;
+    }
+  }
+}
+
+.interested {
+  text-align: center;
+  a {
+    background-color: $navbarColor;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    &:hover {
+      background-color: #1054b9;
+      color: white;
+    }
   }
 }
